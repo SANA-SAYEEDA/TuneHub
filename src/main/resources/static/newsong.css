@@ -1,0 +1,60 @@
+/* newsong.css */
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/lights.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent white background for form */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #8B4513; /* Dark gray color for headings */
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-decoration: underline; /* Underline effect for heading */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); /* Adjust width to accommodate padding */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Light gray border for text input */
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #8B4513; /* Brown color for submit button */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #654321; /* Darker brown on hover */
+}

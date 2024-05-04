@@ -1,0 +1,41 @@
+/* songsdisplay.css */
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-image: url('/images/vintage.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.song-table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+.song-table th {
+    background-color: #8B4513; /* Brown color for table headers */
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.song-table td {
+    border: 1px solid #8B4513; /* Brown color for table borders */
+    padding: 10px;
+}
+
+.song-table tbody tr:nth-child(even) {
+    background-color: rgba(139, 69, 19, 0.5); /* Transparent brown for even rows */
+}
+
+.song-table tbody tr:hover {
+    background-color: rgba(139, 69, 19, 0.7); /* Darker transparent brown on hover */
+}
+
+audio {
+    width: 100%;
+}

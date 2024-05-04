@@ -1,0 +1,83 @@
+/* customerhome.css */
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-image: url('/images/record.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 600px; /* Adjusted max-width for better layout */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+p {
+    color: #ccc;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    padding: 12px 24px;
+    background-color: #8B4513; /* Brown color for buttons */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #654321; /* Darker brown on hover */
+}
+
+h1 {
+    color: #8B4513; /* Brown color for headings */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.non-premium,
+.premium {
+    margin-top: 20px; /* Add margin-top for separation */
+}
+
+/* Table styling */
+table {
+    width: 100%; /* Adjust table width to 100% */
+    margin-top: 20px; /* Add margin-top for separation */
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #8B4513; /* Brown border for table cells */
+    padding: 8px;
+    color: #fff;
+}
+
+th {
+    background-color: #8B4513; /* Brown background for table header */
+}
+
+tr:nth-child(even) {
+    background-color: #654321; /* Darker brown background for even rows */
+}
+.classy-heading {
+    color: #8B4513; /* Brown color for headings */
+    font-size: 24px;
+    margin-bottom: 10px;
+}

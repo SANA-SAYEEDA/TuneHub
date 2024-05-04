@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Add Song</title>
+<link rel="stylesheet" type="text/css" th:href="@{/newsong.css}">
+</head>
+<body>
+	<div class="container">
+		<form action="addsong" method="post">
+			<h1><u>ADD A NEW SONG</u></h1>
+			<div class="form-group">
+				<label for="name">Song Name:</label> 
+				<input type="text" id="name" name="name" placeholder="Enter the song name">
+			</div>
+			<div class="form-group">
+				<label for="artist">Artist:</label> 
+				<input type="text" id="artist" name="artist" placeholder="Enter the artist's name">
+			</div>
+			<div class="form-group">
+				<label for="genre">Genre:</label> 
+				<input type="text" id="genre" name="genre" placeholder="Enter the genre"> 
+			</div>
+			<div class="form-group">
+				<label for="link">Link:</label> 
+				<input type="text" id="link" name="link" placeholder="Enter the song link">
+			</div>
+			<input type="submit" value="ADD SONG">
+		</form>
+	</div>
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Song</title>
+</head>
+<body>
+	<form action="addsong" method="post">
+		Song Name: <input type="text" name="name" placeholder="Enter the song name">
+		 <br><br> 
+		Artist: <input type="text" name="artist" placeholder="Enter the artist's name">
+		<br><br> 
+		Genre: <input type="text" name="genre" placeholder="Enter the genre"> 
+		<br><br> 
+		Link: <input type="text" name="link" placeholder="Enter the song link">
+		<br><br> 
+		<input type="submit" value="ADD SONG">
+	</form>
+</body>
+</html> -->

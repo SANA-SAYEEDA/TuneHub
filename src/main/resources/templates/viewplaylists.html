@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<title>Playlists</title>
+
+<style>
+table, th, td {
+	border: 3px solid black;
+	border-collapse: collapse;
+}
+</style>
+<link rel="stylesheet" type="text/css" th:href="@{/veiwplaylist.css}" />
+
+</head>
+
+<body>
+
+	<h1><u>PLAYLISTS</u></h1>
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="all : ${playlists}">
+				<td th:text="${all.id}"></td>
+				<!-- <td th:text="${all.song}"> -->
+				<td>
+					<ul>
+						<li th:each="song: ${all.song}"><span th:text="${song.name}"></span>
+						<audio controls="controls">
+						<source th:src="${song.link}">
+						</audio>
+						</li>
+					</ul>
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+</body>
+
+</html>
+<!-- <table>
+		<tr>
+			<th>Playlist Name</th>
+			<th>Songs</th>
+			<th>Play</th>
+		</tr>
+		<tr th:each="playlist : ${playlists}">
+			<td th:text="${playlist.name}"></td>
+			<td>
+				<ul>
+					<li th:each="song : ${playlist.song}" th:text="${song.name}"></li>
+				</ul>
+			</td>
+			<td>
+				<ul>
+					<li th:each="song : ${playlist.song}">
+					<audio controls="controls">
+					<source th:src="${song.link}"></audio></li>
+				</ul>
+			</td>
+			
+		</tr>
+	</table> 
+	</body>
+</html> -->
+	
+	

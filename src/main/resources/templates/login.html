@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>LOGIN</title>
+<link rel="stylesheet" th:href="@{/login.css}" />
+</head>
+<body>
+	<div class="container">
+		<h3>Welcome Back!</h3>
+		<p>Please enter your credentials to log in.</p>
+		<form action="validate" method="post">
+			<h2>USER LOGIN:</h2>
+			<label>Email:</label> <br> <input type="email" name="email"
+				placeholder="Enter the email id" /> <br /> <br /> <label>Password:</label>
+			<br> <input type="password" name="password"
+				placeholder="Enter the password" /> <br /> <br /> <input
+				type="submit" value="Login" />
+		</form>
+		<p>
+			<a href="forgotPassword" class="forgot-password-btn">Forgot Password?</a>
+		</p>
+	</div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LOGIN</title>
+</head>
+<body>
+	<form action="validate" method="post">
+		<h2>USER LOGIN:</h2>
+		<label>Email: </label> <br> 
+		<input type="email" name="email" placeholder="Enter the email id" />
+		<br /> <br /> 
+		<label>Password:</label> <br> 
+		<input type="password" name="password" placeholder="Enter the password" /> 
+		<br /> <br /> 
+		<input type="submit" value="Login" />
+	</form>
+
+
+</body>
+</html> -->

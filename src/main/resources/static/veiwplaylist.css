@@ -1,0 +1,33 @@
+/* playlist.css */
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/lights.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    color: #FFFFFF; /* Dark gray color for headings */
+    text-align: center;
+    margin-top: 50px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(210, 180, 140, 0.7); /* Light brown with 70% opacity */
+}
+
+th, td {
+    border: 1px solid #333; /* Dark gray borders for table cells */
+    padding: 8px;
+    background-color: rgba(210, 180, 140, 0.7); /* Light brown with 70% opacity */
+}
+
+th {
+    background-color: #8B4513; /* Light gray background for table header */
+}
