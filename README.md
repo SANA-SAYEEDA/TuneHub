@@ -1,2 +1,2 @@
 # TuneHub
-Springboot Project using Java rest APIs, thymeleaf, MySQL, HTML, and CSS
+A Music streaming web application built using Springboot, Java rest APIs, thyme leaf, MySQL, HTML, and CSS
